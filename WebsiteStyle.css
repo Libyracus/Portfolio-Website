@@ -1,0 +1,182 @@
+/* 🌤️ Base styling */
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #ffffff, #e8f0ff);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  scroll-behavior: smooth; /* ✅ Smooth scrolling */
+}
+
+/* ✨ Fade-in for whole page */
+#content {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🧭 Header section */
+#first {
+  margin: 40px auto 20px;
+  width: 85%;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  padding: 40px 0;
+  background: rgba(255, 255, 255, 0.2); /* ✅ Glass effect */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeUp 1.5s ease-in-out;
+}
+
+#first:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#welcome {
+  font-size: 42px;
+  margin: 10px 0 10px;
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* 💬 Tagline styling */
+#tagline {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  animation: fadeUp 2s ease-in-out;
+}
+
+/* 👤 Profile Photo */
+#myPhoto {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  display: block;
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeUp 2s ease-in-out;
+}
+
+#myPhoto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* 🔗 Navigation section */
+#choose {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0 60px;
+  flex-wrap: wrap;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 22px;
+  padding: 12px 25px;
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: 150px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Underline hover animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 50%;
+  bottom: 5px;
+  background-color: #2c3e50;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.nav-link:hover::after {
+  width: 70%;
+}
+
+.nav-link:hover {
+  background-color: #2c3e50;
+  color: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(44,62,80,0.3);
+}
+
+/* 📱 Responsive design */
+@media (max-width: 768px) {
+  #welcome {
+    font-size: 32px;
+  }
+
+  #tagline {
+    font-size: 18px;
+  }
+
+  #myPhoto {
+    width: 170px;
+    height: 170px;
+  }
+
+  #choose {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    width: 80%;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #welcome {
+    font-size: 26px;
+  }
+
+  #tagline {
+    font-size: 16px;
+  }
+
+  #myPhoto {
+    width: 130px;
+    height: 130px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+}
