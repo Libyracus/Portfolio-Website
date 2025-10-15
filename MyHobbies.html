@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Hobbies | Adrian's E-Portfolio</title>
+  <link rel="stylesheet" href="WebsiteStyle.css" />
+  <style>
+    /* 🌟 Hobbies Section Styling */
+    #hobbies-section {
+      width: 85%;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.35);
+      border-radius: 20px;
+      padding: 50px 40px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    #hobbies-section h1 {
+      text-align: center;
+      font-size: 42px;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    .hobby-category {
+      margin-bottom: 50px;
+      padding: 20px 30px;
+      border-left: 6px solid #2c3e50;
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hobby-category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .hobby-category h2 {
+      color: #1e2a38;
+      margin-bottom: 15px;
+      font-size: 28px;
+      border-bottom: 2px solid #1e2a38;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .hobby-item {
+      margin-top: 15px;
+    }
+
+    .hobby-item h3 {
+      font-size: 22px;
+      color: #2c3e50;
+      margin-bottom: 8px;
+    }
+
+    .hobby-item p {
+      font-size: 18px;
+      color: #444;
+      margin-left: 15px;
+      line-height: 1.6;
+    }
+
+    /* ✨ Responsive Design */
+    @media (max-width: 768px) {
+      #hobbies-section h1 {
+        font-size: 32px;
+      }
+      .hobby-category h2 {
+        font-size: 24px;
+      }
+      .hobby-item h3 {
+        font-size: 20px;
+      }
+      .hobby-item p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="hobbies-section">
+    <h1>My Hobbies & Interests</h1>
+
+    <div class="hobby-category">
+      <h2>💻 Programming</h2>
+
+      <div class="hobby-item">
+        <h3>Creating Real-Life Problem-Solving Software</h3>
+        <p><strong>EcoLabs</strong> — a software application founded by me and my team. I currently serve as the <strong>COO</strong> of the product. EcoLabs solves many challenges faced by traditional markets for farmers through innovative digital solutions.</p>
+      </div>
+
+      <div class="hobby-item">
+        <h3>Solving Complex Programming Problems</h3>
+        <p><strong>Campus Expert Problem-Solving Programmer</strong> — earned certificates and medals from university-wide programming contests. My passion for algorithms and logic led to being hired as a programmer in our university’s <strong>Management Information System</strong>.</p>
+      </div>
+
+      <div class="hobby-item">
+        <h3>Legal Hacking and Capture the Flag (CTF)</h3>
+        <p><strong>3× First Placer in University CTF Contests</strong> — led a team that achieved triple back-to-back victories in ethical hacking and cybersecurity-based competitions.</p>
+      </div>
+    </div>
+
+    <div class="hobby-category">
+      <h2>📝 Literary & Technical Writing</h2>
+
+      <div class="hobby-item">
+        <h3>Feature Writing</h3>
+        <p>Started as a campus journalist from junior to senior high school and now continue as an online article writer. I enjoy crafting stories that inform, inspire, and connect readers with ideas that matter.</p>
+      </div>
+
+      <div class="hobby-item">
+        <h3>Poetry Writing</h3>
+        <p>Joined several poetry writing contests and won multiple awards and medals. Writing poetry allows me to express emotions and experiences through rhythm and language.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="choose">
+    <a href="Webiste.html" class="nav-link">Home</a>
+    <a href="aboutme.html" class="nav-link">About Me</a>
+    <a href="MySkills.html" class="nav-link">My Skills</a>
+    <a href="ContactMe.html" class="nav-link">Contact Me</a>
+  </div>
+</body>
+</html>
